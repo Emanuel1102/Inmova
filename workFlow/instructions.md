@@ -34,6 +34,7 @@ Utilizaremos un **monolito modular organizado por funcionalidades, con separaci�
 
 Estructura inicial propuesta:
 
+```text
 src/
 ├── app/
 │   ├── (auth)/
@@ -149,6 +150,7 @@ src/
     ├── unit/
     ├── integration/
     └── e2e/
+```
 Adapta la estructura si TypeORM o Next.js requieren una organización más apropiada, pero explícame cualquier cambio. No crees archivos vacíos o abstracciones innecesarias.
 
 Responsabilidades:
@@ -289,11 +291,3 @@ La prioridad es desarrollar primero el núcleo funcional y dejar Docker y CI/CD 
 8. No me pidas publicar contraseñas, tokens ni cadenas de conexión. Usa nombres de variables y valores ficticios en los ejemplos.
 9. No inventes resultados de pruebas ni afirmes que algo funciona sin verificarlo.
 10. Ayúdame a preparar explicaciones que pueda utilizar durante la sustentación.
-
-## 7\. Primera tarea
-
-Comienza con el **día 1**. Mi proyecto de Supabase ya está creado, pero aún debemos configurar el proyecto Next.js local y TypeORM.
-
-Primero indícame los requisitos previos y los comandos para crear o verificar la aplicación Next.js. Después configura las variables de entorno de forma segura y la conexión de TypeORM. Finalmente, realiza una prueba técnica mínima que demuestre conexión, creación de un schema de prueba y consulta a una tabla de ese schema.
-
-No empieces todavía con la interfaz completa, autenticación ni CRUD. Primero necesitamos validar la base técnica del multitenancy.
